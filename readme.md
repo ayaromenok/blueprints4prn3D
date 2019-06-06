@@ -1,10 +1,18 @@
 ## 3D printer stuff
 
 ### Tests:
-	
+
 #### H0 railroad modeling
-		- rails
-		- terrain vi heightmap
+
+##### Extruder
+
+Usage of 0.2mm extruder	is highly recomended. Probably, 0.3mm can be used too, but with 0.4mm is almost impossible to recieve suitable quality in size of H0.
+
+##### Targets
+
+	- rails
+	- terrain vi heightmap
+		
 		
 #### Gearbox and similar devices
 	
