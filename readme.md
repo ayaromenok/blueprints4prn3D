@@ -2,11 +2,11 @@
 
 ### Additional printer modifications
 
-Control board is (Melzi 3.0 v3)(https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
+Control board is (Melzi 3.0 v3](https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
 
 ####  Additional extruders
 
- (Adding a additional extruder)[https://www.instructables.com/id/Adding-More-Extruders-to-Any-3d-Printer]
+ [Adding a additional extruder](https://www.instructables.com/id/Adding-More-Extruders-to-Any-3d-Printer)
  
  - Need a additional power device/control board for hotbed.
  - Use hotbed power/temp sensor for additional extruder
@@ -14,6 +14,8 @@ Control board is (Melzi 3.0 v3)(https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
  - Diamond extruder can be installed with X,Y,Z stop and Arduino CNC board
  
 #### Leveling
+
+ [general info about leveling](https://www.youtube.com/watch?v=EcGFLwj0pnA)
 
 ### Tests:
 
