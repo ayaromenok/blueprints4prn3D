@@ -1,5 +1,5 @@
 linear_extrude(2)
-	import("../dxf/RPi_3B.dxf", $fn=50);
+	import("../dxf/RPi_3A.dxf", $fn=50);
 
 //support fo 2.5mm scolls
 translate([3.5,3.5,0])
