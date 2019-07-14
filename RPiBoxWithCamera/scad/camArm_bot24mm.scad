@@ -1,9 +1,9 @@
 //bottom
-translate([0,0,0])
+translate([0,0,-1])
 rotate([0,0,0])
 difference() {
-	cylinder(2,12,10, $fn=40);
-	cylinder(3,2.3,2.3, $fn=40);
+	cylinder(3,12,10, $fn=40);
+	cylinder(4,2.3,2.3, $fn=40);
 }
 //right
 translate([0,7,11])
