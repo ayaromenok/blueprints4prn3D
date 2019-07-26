@@ -1,10 +1,11 @@
 //Cam V1_3
 $fn=50;
 difference(){
+translate([1.5,1.5,0])
 minkowski()
 {
-  cube([25,25,1]);
-  cylinder(r=2,h=1);
+  cube([22,22,0.35]);
+  cylinder(r=3,h=0.35);
 }
 
 linear_extrude(10)
