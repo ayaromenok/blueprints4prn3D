@@ -32,6 +32,11 @@ Control board is (Melzi 3.0 v3](https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
  - Use hotbed power/temp sensor for additional extruder
  - Use XStop with LN298/stepper motor for second extruder
  - Diamond extruder can be installed with X,Y,Z stop and Arduino CNC board
+ https://reprap.org/wiki/Adding_more_extruders
+ https://reprap.org/wiki/Diamond_Hotend
+ https://reprap.org/wiki/Repetier_Color_Mixing
+ https://reprap.org/wiki/RUMBA
+ https://reprap.org/wiki/Stepper_Expander#Melzi
  
 #### Leveling
 
