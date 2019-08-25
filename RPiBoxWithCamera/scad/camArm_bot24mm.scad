@@ -15,7 +15,9 @@ difference() {
 translate([-4,5,0])
 	scale([1,0.25,1])
 		cube(8);
-
+translate([-4,6,0])
+	scale([1,0.25,0.5])
+		cube(8);
 //left
 translate([0,-3,11])
 rotate([90,0,0])
@@ -26,4 +28,8 @@ difference() {
 
 translate([-4,-7,0])
 scale([1,0.25,1])
+cube(8);
+
+translate([-4,-8,0])
+scale([1,0.25,0.5])
 cube(8);
