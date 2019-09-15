@@ -8,14 +8,16 @@ translate([-8,21,-2])
 	cube([10,14,10]);
 
 //power\hdmi\audio
-translate([5,55,4])
-	cube([12,10,7]);
+translate([5,55,3])
+	cube([12,10,8]);
 
 translate([22,55,4])
-	cube([20,10,10]);
+	cube([21,10,12]);
 
-translate([50.5,55,4])
-	cube([7,10,8]);
+translate([53.5,65,8])
+	rotate([90,0,0])
+		cylinder(10,4,4);
+
 
 //net\USB
 translate([80,1,4])
@@ -34,7 +36,6 @@ for (i =[5:10:75]){
 	}
 
 }
-
 
 //support fo 2.5mm scolls
 //*
