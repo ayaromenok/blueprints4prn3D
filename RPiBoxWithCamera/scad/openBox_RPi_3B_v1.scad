@@ -19,13 +19,13 @@ translate([50.5,55,4])
 
 //net\USB
 translate([80,1,4])
-	cube([10,15,20]);
+	cube([10,16,20]);
 
-translate([80,18.5,4])
-	cube([10,15,20]);
+translate([80,19,4])
+	cube([10,16,20]);
 
-translate([80,36,4])
-	cube([10,18,18]);
+translate([80,37,4])
+	cube([10,17,18]);
 
 //top holes
 for (i =[5:10:75]){
