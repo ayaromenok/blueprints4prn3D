@@ -1,6 +1,3 @@
-
-
-
 translate([0,2.8,0])
 rotate([90,0,0])
 difference() {
@@ -11,11 +8,10 @@ difference() {
 
 //long
 translate([-5,-2,2.4])
-	scale([1,0.4,4])
-		cube(10);
-translate([-5,-4,34.4])
-	scale([1,0.8,1])
-		cube(10);
+		cube([10,4,31]);
+
+//translate([-5,-4,34.4])
+//		cube([10,8,10]);
 
 //right
 translate([0,7,50])
@@ -24,9 +20,8 @@ difference() {
 	cylinder(4,5,5, $fn=30);
 	cylinder(4,2.3,2.3, $fn=30);
 }
-translate([-5,3,37.5])
-	scale([1,0.25,1])
-		cube(10);
+translate([-5,3,33.5])
+		cube([10,2.5,14]);
 
 //left
 translate([0,-3,50])
@@ -35,7 +30,11 @@ difference() {
 	cylinder(4,5,5, $fn=30);
 	cylinder(4,2.3,2.3, $fn=30);
 }
+translate([-5,-5.5,33.5])
+	cube([10,2.5,14]);
 
-translate([-5,-5.5,37.5])
-scale([1,0.25,1])
-cube(10);
+translate([0,3,36.8])
+		rotate([0,270,90])
+			scale([7,5.71,1])
+			linear_extrude(6)
+	 		circle(r=1, $fn=3);
