@@ -1,4 +1,4 @@
-height = 4;
+height = 4; // not a height of anything - just a constant
 screw = 3;//2.5
 screw_nut = 6.4;//5.6
 // bottom part
@@ -19,7 +19,7 @@ difference(){
 
 //holes from bottom for M3 nuts
 //*
-translate([10,4,-1])
+translate([10,4,-2])
 		cylinder(height,screw_nut/2,screw_nut/2, $fn=6);
 translate([10,62,-2])
 		cylinder(height,screw_nut/2,screw_nut/2, $fn=6);
@@ -69,9 +69,12 @@ translate([67,75,height+3.6])
 translate([90,75,height+3.6])
 	cube([9,15,11]);
 
-//thiner I\o side
-translate([-4,82,height+0.6])
-	cube([110,90,26]);
+//thiner I\O side
+translate([-4,84,height+0.6])
+	minkowski(){
+		cube([110,90,26]);
+	sphere(2,$fn=32);
+	}
 
 //top holes
 for (i =[5:10:95]){
@@ -85,12 +88,14 @@ translate([100,20,height+15])
 
 // cooling holes(back)
 for (i =[0:20:50]){
-	translate([20+i,-8,height+10])
+	translate([25+i,-8,height+10])
 		cube([15,10,20]);
 	}
 
+// additional cam cable hole(side)
+translate([50,-8,height+3.6])
+	cube([15,10,5]);
 } //end difference - side()
-
 
 
 
