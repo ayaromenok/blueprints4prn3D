@@ -24,7 +24,7 @@ linear_extrude(box_height)
 
 
 //SD card + DSI(Display)
-translate([-8,21,0])
+translate([-8,19.5-mnk_r_left,0])
 	minkowski(){
 		cube([10,14,14]);
 		sphere(mnk_r_left, $fn=mnk_r_left*8);
