@@ -6,18 +6,19 @@
 
 ##### Printer shape
 
+ - suitable for Y right-stop configuration
  - Home X: 0
  - Home Y: 0
  - Home Z: 0
- - X Min: 0
+ - X Min: -40
  - Y Min: 0
  - X Max 240
- - Y Max 260
+ - Y Max 240
  - Bed Left -40
- - Bed Front 60
+ - Bed Front 11
  - Print Area Width: 200
  - Print Area Depth: 200
- - Print Area Height: 200
+ - Print Area Height: 240
 
 
 ### Additional printer modifications
