@@ -1,7 +1,7 @@
 bottom_tk = 2;			//bottom ThicKness
 side_tk = 2;			//side ThicKness
 support_tk = 2; 		//support ThicKness
-box_height = 30;
+box_height_int = 30;
 screw_size = 2.5; 		//M2.5
 
 mnk_r_main = 4; 		// must be > 3
@@ -10,14 +10,14 @@ mnk_r_right = 1;
 mnk_r_left = 2;
 
 difference(){
-linear_extrude(box_height+bottom_tk+support_tk)
+linear_extrude(box_height_int+bottom_tk+support_tk)
 	minkowski(){
 		square([79,50]);
 		circle(mnk_r_main+side_tk, $fn=40);
 	}//minkowski external 
 
 translate([0,0,bottom_tk])
-linear_extrude(box_height+bottom_tk+support_tk)
+linear_extrude(box_height_int+bottom_tk+support_tk)
 	minkowski(){
 		square([79,50]);
 		circle(mnk_r_main, $fn=24);
@@ -27,23 +27,23 @@ linear_extrude(box_height+bottom_tk+support_tk)
 //SD card + DSI(Display)
 translate([-8,20-mnk_r_left,0])
 	minkowski(){
-		cube([10,14,14+support_tk]);
+		cube([10,15,14+support_tk]);
 		sphere(mnk_r_left, $fn=mnk_r_left*8);
 	}
 //power
-translate([1,-(mnk_r_main+side_tk ),bottom_tk+support_tk])
+translate([1.5,-(mnk_r_main+side_tk ),bottom_tk+support_tk])
 	minkowski(){
 		cube([12,10,8]);
 		sphere(mnk_r_front,$fn=mnk_r_front*8);
 	}
 //hdmi
-translate([18,-(mnk_r_main+side_tk),bottom_tk+support_tk])
+translate([18.5,-(mnk_r_main+side_tk),bottom_tk+support_tk])
 	minkowski(){
 		cube([21,10,12]);
 		sphere(mnk_r_front,$fn=mnk_r_front*8);
 	}
 //audio
-translate([49.5,-(side_tk),bottom_tk*2+support_tk+2])
+translate([50.5,-(side_tk),bottom_tk*2+support_tk+2])
 	rotate([90,0,0])
 		cylinder(10,4,4, $fn=32);
 
@@ -87,7 +87,18 @@ translate([58, 0, -1])
 translate([58, 49, -1])
 	cylinder(3, screw_size+0.4, screw_size+0.4, $fn=6);
 
+//top holes
+for (i =[5:10:75]){
+	translate([(i),-mnk_r_main,bottom_tk+box_height_int+support_tk-2.5])
+		scale([1,0.6,0.5])
+		sphere(3, $fn=30);
+	translate([(i),50+mnk_r_main,bottom_tk+box_height_int+support_tk-2.5])
+		scale([1,0.6,0.5])
+		sphere(3, $fn=30);
+	}
+
 } //difference box
+
 
 
 // board support on top of holes at 0, 0, 58, 49
