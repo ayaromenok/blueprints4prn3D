@@ -49,10 +49,16 @@ Control board is (Melzi 3.0 v3](https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
 
  - [Azteeg X3 PRO - 5 extruders](https://www.aliexpress.com/item/32813649642.html) 
 
-
 #### Leveling
 
  [general info about leveling](https://www.youtube.com/watch?v=EcGFLwj0pnA)
+
+
+### Colors
+
+ - Repetier support color info in [AFM](https://en.wikipedia.org/wiki/Additive_manufacturing_file_format) file, while OpenSCAD don't(yet). 
+ - Color setup for Repetier described [here](https://www.reprap.org/wiki/Repetier_Color_Mixing) - Color # in preinter settings is the same, as *material id* in AMF file
+	
 
 ### Tests:
 
