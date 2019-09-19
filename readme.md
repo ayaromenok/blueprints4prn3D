@@ -37,10 +37,19 @@ Control board is (Melzi 3.0 v3](https://reprap.org/wiki/Melzi#Melzi_Version_2.0)
  - [adding more extruders](https://reprap.org/wiki/Adding_more_extruders)
  - [Diamond hotend](https://reprap.org/wiki/Diamond_Hotend)
  - [Repetier color mix](https://reprap.org/wiki/Repetier_Color_Mixing)
- - [RUMBA 6ext board](https://reprap.org/wiki/RUMBA)
- - [Stpper extender ](https://reprap.org/wiki/Stepper_Expander#Melzi)
- - [Bigtech SKR Pro v1.1 6ext board](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1) - with dual Z
+ - [Stepper expander\melzi](https://reprap.org/wiki/Stepper_Expander#Melzi)
  
+##### 3 extruders(6 steppers) boards
+ 
+ - [RUMBA board](https://reprap.org/wiki/RUMBA)
+ - [Bigtech SKR Pro v1.1 board](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1) - with dual Z
+ - [RAMPS-FD board](https://reprap.org/wiki/RAMPS-FD)
+
+##### 3+ extruders(6+ steppers) boards
+
+ - [Azteeg X3 PRO - 5 extruders](https://www.aliexpress.com/item/32813649642.html) 
+
+
 #### Leveling
 
  [general info about leveling](https://www.youtube.com/watch?v=EcGFLwj0pnA)
