@@ -59,6 +59,21 @@ difference(){
 		translate([96,76,47])
 			cube([5,14,18]);
 	//door right
+
+	//holes in the back
+		translate([50,102,55])
+			rotate([90,0,0])
+				scale([1,2,1])
+					cylinder(5,4,6, $fn=32);
+
+	//holes forwater
+		translate([30,105,10])
+			rotate([90,0,0])
+					cylinder(15,2,2, $fn=8);
+		translate([70,105,10])
+			rotate([90,0,0])
+					cylinder(15,2,2, $fn=8);
+
 }
 
 
@@ -96,3 +111,4 @@ for (i = [0,20,40]) {
 	translate([-2,10+i,40])
 			cube([2,10,3]);
 } //windows right support
+
