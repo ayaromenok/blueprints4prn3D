@@ -1,6 +1,6 @@
 difference(){
 	cube([100,100,80]);
-	translate([5,5,1])
+	translate([5,5,3])
 		cube([90,90,80]);
 
 //upper part
@@ -107,8 +107,8 @@ for (i = [0,20,40]) {
 } //windows left support
 
 //windows right support
-for (i = [0,20,40]) {
-	translate([-2,10+i,40])
+for (i = [0,20,20]) {
+	translate([100,10+i,40])
 			cube([2,10,3]);
 } //windows right support
 
