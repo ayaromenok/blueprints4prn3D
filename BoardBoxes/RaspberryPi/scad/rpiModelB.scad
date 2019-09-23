@@ -103,28 +103,28 @@ for (i =[5:10:75]){
 
 // board support on top of holes at 0, 0, 58, 49
 difference(){
-	translate([0, 0, bottom_tk])
-		cylinder(support_tk, 3, 3, $fn=30);
+	translate([-0.5, -0.5, bottom_tk])
+		cylinder(support_tk, 3.5, 3.5, $fn=30);
 	translate([0, 0, bottom_tk-1])
 		cylinder(support_tk*2, screw_size/2+0.2, screw_size/2+0.2, $fn=16);
 }
 difference(){
-	translate([0, 49, bottom_tk])
-		cylinder(support_tk, 3, 3, $fn=30);
+	translate([-0.5, 49.5, bottom_tk])
+		cylinder(support_tk, 3.5, 3.5, $fn=30);
 	translate([0, 49, bottom_tk-1])
 		cylinder(support_tk*2, screw_size/2+0.2, screw_size/2+0.2, $fn=16);
 }
 
 difference(){
-	translate([58, 0, bottom_tk])
-		cylinder(support_tk, 3, 3, $fn=30);
+	translate([58, -0.5, bottom_tk])
+		cylinder(support_tk, 3.5, 3.5, $fn=30);
 	translate([58, 0, bottom_tk-1])
 		cylinder(support_tk*2, screw_size/2+0.2, screw_size/2+0.2, $fn=16);
 }
 
 difference(){
-	translate([58, 49, bottom_tk])
-		cylinder(support_tk, 3, 3, $fn=30);
+	translate([58, 49.5, bottom_tk])
+		cylinder(support_tk, 3.5, 3.5, $fn=30);
 	translate([58, 49, bottom_tk-1])
 		cylinder(support_tk*2, screw_size/2+0.2, screw_size/2+0.2, $fn=16);
 }
