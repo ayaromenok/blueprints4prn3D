@@ -14,51 +14,51 @@ difference(){
 	} //i
 	//windows front
 	for (i = [0,20,40]) {
-		translate([15+i,4,60])
+		translate([15+i,3,60])
 			rotate([90,0,0])
 				cylinder(5,4,4, $fn=16);
-		translate([11+i,-1,48])
+		translate([11+i,-2,48])
 			cube([8,5,12]);
 	} //windows front
 
 	//windows left
 	for (i = [0,20,40]) {
-		translate([-1,(15+i),60])
+		translate([-2,(15+i),60])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([-1,11+i,48])
+		translate([-2,11+i,48])
 			cube([5,8,12]);
 	} //windows left
 
 	//windows right
 	for (i = [0,20,20]) {
-		translate([96,15+i,,68])
+		translate([97,15+i,,68])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([96,11+i,56])
+		translate([97,11+i,56])
 			cube([5,8,12]);
 	} //windows right
 
 
 	//doors front
-		translate([18,4,18])
+		translate([18,3,18])
 			rotate([90,0,0])
 				cylinder(5,7,7, $fn=32);
-		translate([11,-1,0])
+		translate([11,-2,0])
 			cube([14,5,18]);
 
-		translate([81,4,40])
+		translate([81,3,40])
 			rotate([90,0,0])
 				cylinder(5,7,7, $fn=32);
-		translate([74,-1,22])
+		translate([74,-2,22])
 			cube([14,5,18]);
 	//doors front
 
 	//door right
-		translate([96,83,65])
+		translate([97,83,65])
 			rotate([0,90,0])
 				cylinder(5,7,7, $fn=32);
-		translate([96,76,47])
+		translate([97,76,47])
 			cube([5,14,18]);
 	//door right
 
