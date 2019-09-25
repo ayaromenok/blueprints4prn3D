@@ -6,36 +6,36 @@ difference(){
 			cylinder(90,62,65,$fn=4);
 
 //upper part
-	for (i = [0:10.5:100]){
-		for (j = [0:10.5:100]){
-			translate([-0.1+i,-0.1+j,85])
+	for (i = [0:9]){
+		for (j = [0:9]){
+			translate([-0.1+i*10.5,-0.1+j*10.5,85])
 				cube([6,6,6]);
 		} //j
 	} //i
 	//windows front
-	for (i = [0,20,40]) {
-		translate([15+i,3,60])
+	for (i = [0:2]) {
+		translate([15+i*20,3,60])
 			rotate([90,0,0])
 				cylinder(5,4,4, $fn=16);
-		translate([11+i,-2,48])
+		translate([11+i*20,-2,48])
 			cube([8,5,12]);
 	} //windows front
 
 	//windows left
-	for (i = [0,20,40]) {
-		translate([-2,(15+i),60])
+	for (i = [0:3]) {
+		translate([-2,(15+i*20),60])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([-2,11+i,48])
+		translate([-2,11+i*20,48])
 			cube([5,8,12]);
 	} //windows left
 
 	//windows right
-	for (i = [0,20,20]) {
-		translate([97,15+i,,68])
+	for (i = [0:1]) {
+		translate([97,15+i*20,,68])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([97,11+i,56])
+		translate([97,11+i*20,56])
 			cube([5,8,12]);
 	} //windows right
 
@@ -97,22 +97,22 @@ translate([100,0,0])
 
 
 //windowsill front 
-for (i = [0,20,40]) {
-	translate([10+i,0,46])
+for (i = [0:2]) {
+	translate([10+i*20,0,46])
 		rotate([0,90,0])
 			cylinder(10,3,3,$fn=3);
 } //windows front support
 
 //windowsill left support
-for (i = [0,20,40]) {
-	translate([0,10+i,46])
+for (i = [0:3]) {
+	translate([0,10+i*20,46])
 		rotate([0,90,90])
 			cylinder(10,3,3,$fn=3);
 } //windows left support
 
 //windowsill right support
-for (i = [0,20,20]) {
-	translate([100,10+i,54])
+for (i = [0:1]) {
+	translate([100,10+i*20,54])
 		rotate([0,90,90])
 			cylinder(10,3,3,$fn=3);
 } //windows right support
