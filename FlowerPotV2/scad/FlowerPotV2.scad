@@ -1,39 +1,41 @@
 difference(){
-	cube([100,100,80]);
-	translate([5,5,3])
-		cube([90,90,80]);
+	cube([100,100,90]);
+	translate([50,50,3])
+//		cube([90,90,90]);
+		rotate([0,0,45])
+			cylinder(90,62,65,$fn=4);
 
 //upper part
 	for (i = [0:10.5:100]){
 		for (j = [0:10.5:100]){
-			translate([-0.1+i,-0.1+j,75])
+			translate([-0.1+i,-0.1+j,85])
 				cube([6,6,6]);
 		} //j
 	} //i
 	//windows front
 	for (i = [0,20,40]) {
-		translate([15+i,4,55])
+		translate([15+i,4,60])
 			rotate([90,0,0])
 				cylinder(5,4,4, $fn=16);
-		translate([11+i,-1,43])
+		translate([11+i,-1,48])
 			cube([8,5,12]);
 	} //windows front
 
 	//windows left
 	for (i = [0,20,40]) {
-		translate([-1,15+i,,55])
+		translate([-1,(15+i),60])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([-1,11+i,43])
+		translate([-1,11+i,48])
 			cube([5,8,12]);
 	} //windows left
 
 	//windows right
 	for (i = [0,20,20]) {
-		translate([96,15+i,,55])
+		translate([96,15+i,,68])
 			rotate([0,90,0])
 				cylinder(5,4,4, $fn=16);
-		translate([96,11+i,43])
+		translate([96,11+i,56])
 			cube([5,8,12]);
 	} //windows right
 
@@ -94,21 +96,24 @@ translate([100,0,0])
 	cube([10,100,23]);
 
 
-//windows front support
+//windowsill front 
 for (i = [0,20,40]) {
-	translate([10+i,-2,40])
-		cube([10,2,3]);
+	translate([10+i,0,46])
+		rotate([0,90,0])
+			cylinder(10,3,3,$fn=3);
 } //windows front support
 
-//windows left support
+//windowsill left support
 for (i = [0,20,40]) {
-	translate([-2,10+i,40])
-			cube([2,10,3]);
+	translate([0,10+i,46])
+		rotate([0,90,90])
+			cylinder(10,3,3,$fn=3);
 } //windows left support
 
-//windows right support
+//windowsill right support
 for (i = [0,20,20]) {
-	translate([100,10+i,40])
-			cube([2,10,3]);
+	translate([100,10+i,54])
+		rotate([0,90,90])
+			cylinder(10,3,3,$fn=3);
 } //windows right support
 
