@@ -1,3 +1,4 @@
+rotate([180,0,0]) {
 difference(){ //road wheel
 	union() {	//road wheel
 		translate([0,0,5])
@@ -12,7 +13,7 @@ difference(){ //road wheel
 	translate([0,0,-0.5])
 		cylinder(4,23,8, $fn=80);
 	translate([0,0,-5])
-		cylinder(20,3,3, $fn=32);
+		cylinder(20,3.2,3.2, $fn=32);
 }//union of road wheel
 
 difference(){ //road wheel internal part
@@ -23,12 +24,6 @@ difference(){ //road wheel internal part
 			cylinder(3,5,5, $fn=40);
 	} //difference of road wheel internal part
 	translate([0,0,-5])
-		cylinder(20,3,3, $fn=32);
+		cylinder(20,3.2,3.2, $fn=32);
 }//union of road wheel internal part
-
-/*
-translate([60,0,0])
-rotate_extrude(angle=360, convexity=120, $fn=100)
-	rotate([0,0,90])	
-		import("../dxf/Tiger800mmWheel_s16.dxf", $fn=60);
-*/
+}//rotate
