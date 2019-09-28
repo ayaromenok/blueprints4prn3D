@@ -1,13 +1,13 @@
-size		= 50;
+size		= 200;
 thk			= 3;
 thk_arc		= 0.8; //thinkness of support arcs
 step_arc	= 10;
 
 difference(){
 	translate([0,0,0])
-		cube(size,size,size);
+		cube([size,size,(size)]);
 	translate([thk,thk,thk])
-		cube(size-thk*2,size-thk*2,size-thk*2);
+		cube([size-thk*2,size-thk*2,size-thk*2]);
 
 	translate([(size*3/4), (size/2), size-thk*2])
 		cylinder(thk*3,step_arc/2,step_arc/2);
