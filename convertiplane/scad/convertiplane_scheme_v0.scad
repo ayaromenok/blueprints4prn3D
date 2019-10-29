@@ -2,7 +2,7 @@ fN = 1;
 
 rWing = 20;
 lWingCenter =30;
-lWingOuter = 60;
+lWingOuter = 80;
 lWingNervure = 20;
 lWingEngine = 30;
 aWingEngine = 30;//angle
@@ -69,6 +69,19 @@ module centerWing(){
 				cylinder(lWingCenter,lWingNervure,lWingNervure,$fn=rWing*fN);
 }//center Wing
 
+module stabilizer(){
+	color("grey")
+	translate([rFus,lFus/2,-rFus])
+		rotate([0,60,0])
+			scale([0.1,1,1])
+				cylinder(lWingCenter*2,lWingNervure*0.5,lWingNervure*0.5,$fn=0.5*rWing*fN);
+	color("grey")
+	translate([-rFus,lFus/2,-rFus])
+		rotate([0,-60,0])
+			scale([0.1,1,1])
+				cylinder(lWingCenter*2,lWingNervure*0.5,lWingNervure*0.5,$fn=0.5*rWing*fN);
+}//stabilizer
+
 module fuselage(){
 translate([00,-lFus/2,-rFus])
 	rotate([-90,0,0])
@@ -80,7 +93,7 @@ translate([00,-lFus/2,-rFus])
 translate([0,0,-rFus])
 fuselage();
 centerWing();
-
+stabilizer();
 dualEngine();
 mirror([1,0,0])
 	rotate([-45,0,0])
