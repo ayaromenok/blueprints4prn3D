@@ -41,7 +41,7 @@ module engine(){
 					translate([lWingEngine,0,0])
 						rotate([0,90,i*120])
 							scale([0.1,1,1])
-								cylinder(lBlade,rEngine,rEngine,$fn=2*rEngine*fN);
+								cylinder(lBlade,rEngine/2,rEngine,$fn=2*rEngine*fN);
 	}//for-blades
 }//engines
 
@@ -89,14 +89,30 @@ translate([00,-lFus/2,-rFus])
 			cylinder(lFus,rFus,rFus,$fn=2*rFus*fN);
 }//fuselage
 
+module chassis(){
+	color("darkgrey"){
+		translate([0,rFus,-4*rFus])
+			mirror([0,0,1])
+				scale([0.75,0.5,1])
+					centerWing();
+		translate([lWingCenter,rFus,-4.5*rFus])
+			rotate([0,90,0])
+				cylinder(1, rFus,rFus,$fn=rFus*fN*2);
+		translate([-lWingCenter,rFus,-4.5*rFus])
+			rotate([0,90,0])
+				cylinder(1, rFus,rFus,$fn=rFus*fN*2);
+		translate([0,-lFus/2,-4.5*rFus])
+			rotate([0,90,0])
+				cylinder(1, rFus,rFus,$fn=rFus*fN*2);
+	}//color
+}//chassis
 
 translate([0,0,-rFus])
-fuselage();
+	fuselage();
 centerWing();
 stabilizer();
 dualEngine();
 mirror([1,0,0])
 	rotate([-45,0,0])
-	dualEngine();
-
-
+		dualEngine();
+chassis();
