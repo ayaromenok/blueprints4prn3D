@@ -10,14 +10,14 @@
  - Home X: 0
  - Home Y: 0
  - Home Z: 0
- - X Min: -40
+ - X Min: -35
  - Y Min: 0
- - X Max 240
- - Y Max 240
- - Bed Left -40
- - Bed Front 11
- - Print Area Width: 200
- - Print Area Depth: 200
+ - X Max 220
+ - Y Max 220
+ - Bed Left -51
+ - Bed Front 0
+ - Print Area Width: 220
+ - Print Area Depth: 220
  - Print Area Height: 240
 
 
